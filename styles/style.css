@@ -116,7 +116,7 @@ header {
 }
 
 /* article section */
-article-section {}
+.article-section {}
 .articles {
     display: flex;
 }
