@@ -120,7 +120,9 @@ article-section {}
 .articles {
     display: flex;
 }
-.article {}
+.article {
+    position: relative;
+}
 .first-article {}
 .first-article h3 {
     font-weight: 700;
@@ -159,10 +161,20 @@ article-section {}
 
 
     /* or 108% */
+
     background-color: var(--bg_01);
+
     display: inline-block;
-    padding: 45px 40px 45px 40px;
+
+    padding: 40px 40px 40px 40px;
+
     border-radius: 8px;
+
+    position: absolute;
+
+    bottom: 70px;
+
+    left: -110px;
 }
 .article-experience h3 {
     margin: 0;
@@ -175,4 +187,75 @@ article-section {}
     text-align: center;
     color: var(--bg_02);
     font-size: 25px;
+}
+
+/* resume section */
+.resume>h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    max-width: 60%;
+    margin-bottom: 24px;
+}
+.resume>p {
+    line-height: 26px;
+    color: var(--dark_o3);
+    max-width: 38%;
+}
+.resume-info {
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.resume-info>div {
+    padding: 50px 45px;
+    border: 1px solid var(--bg_01);
+    border-radius: 8px;
+}
+.resume-info img {
+    display: block;
+    margin: 0 auto;
+}
+.resume-info h3 {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    text-align: center;
+    margin: 0 0 5px 0;
+}
+.resume-info p {
+    text-align: center;
+    margin: 0;
+}
+
+/* sponsor section */
+.sponsor-section>h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.sponsor-section>p {
+    line-height: 26px;
+    color: var(--dark_o3);
+    max-width: 38%;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponsor-logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 130px 0;
+}
+
+/* footer */
+footer {
+    padding: 39px 0;
+    background-color: var(--bg_02);
+    margin-bottom: 150px;
+}
+footer p {
+    text-align: center;
+    font-size: 20px;
 }
